@@ -28,4 +28,4 @@ module.exports = {
 			return Math.pow(Z * L * S + 1, 1.0 / L) * M;
 		}
 	}
-}
+};
