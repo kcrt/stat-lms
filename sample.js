@@ -1,4 +1,4 @@
-const lmsStat = require('.');
+const statLms = require('.');
 
 /*
  * LMS values for:
@@ -9,8 +9,8 @@ const M = 3094.186;
 const S = 0.109;
 const weightOfMyBaby = 2535;
 
-var zScore = lmsStat.getZScore(weightOfMyBaby, L, M, S);
-var percentile = lmsStat.getPercentile(zScore);
+var zScore = statLms.getZScore(weightOfMyBaby, L, M, S);
+var percentile = statLms.getPercentile(zScore);
 
 console.log(`My baby's weight is ${zScore.toFixed(2)} SD`);
 if(percentile < 10){
